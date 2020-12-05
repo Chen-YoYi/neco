@@ -1,0 +1,140 @@
+.order .van-nav-bar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+.order .order_eat {
+  margin: 60px 25px 20px;
+  box-shadow: 0px 0px 6px 1px #ddd;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 10px 0px;
+}
+.order .order_eat .eating {
+  font-size: 14px;
+  color: #333752;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.order .order_eat .eatChoice {
+  margin-right: 20px;
+}
+.order .order_address {
+  margin: 10px 25px 20px;
+  box-shadow: 0px 0px 6px 1px #ddd;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding-top: 10px;
+}
+.order .order_address p {
+  margin: 0 20px;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 4px;
+  color: #333752;
+  padding-left: 10px;
+}
+.order .order_address p:nth-of-type(1),
+.order .order_address p:nth-of-type(2),
+.order .order_address p:nth-of-type(3) {
+  padding: 10px 10px;
+  border-bottom: 1px dotted #333752;
+}
+.order .order_address p:nth-of-type(1) span:nth-of-type(1),
+.order .order_address p:nth-of-type(2) span:nth-of-type(1),
+.order .order_address p:nth-of-type(3) span:nth-of-type(1) {
+  font-weight: bold;
+}
+.order .order_address p:nth-of-type(1) span:nth-of-type(2),
+.order .order_address p:nth-of-type(2) span:nth-of-type(2),
+.order .order_address p:nth-of-type(3) span:nth-of-type(2) {
+  width: 180px;
+  text-align: right;
+}
+.order .order_address p:nth-of-type(4) {
+  font-weight: bold;
+  padding: 10px 10px 20px 10px;
+  height: 40px;
+}
+.order .order_address p:nth-of-type(4) span {
+  background-color: #333752;
+  color: #fff;
+  padding: 10px 20px ;
+  border-radius: 4px;
+}
+.order .order_info {
+  margin: 10px 25px;
+  box-shadow: 0px 0px 6px 1px #ddd;
+  text-align: left;
+  border-radius: 5px;
+  padding: 30px 20px;
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+.order .order_info .van-card__content {
+  padding: 0px 10px;
+}
+.order .order_info .van-card__title {
+  margin: 8px 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.order .address_box .address_head {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333752;
+  font-weight: bold;
+}
+.order .address_box .van-address-list__bottom {
+  bottom: 10px;
+}
+.order .address_box .van-address-item {
+  margin: 8px 20px;
+  border: 1px solid #f5f5f5;
+}
+.order .address_box .van-button--danger {
+  background-color: #333752;
+  border: 1px solid #333752;
+}
+.order .address_box .van-icon-edit::before,
+.order .address_box .van-icon-edit::before {
+  display: none;
+}
+.order .order_total {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  padding: 0 25px;
+  box-sizing: border-box;
+  color: #333752;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 1px #d4d4d6;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.order .order_total .price {
+  line-height: 60px;
+}
+.order .order_total .price span {
+  color: #666;
+  font-size: 12px;
+}
+.order .order_total .price span:nth-last-of-type(1) {
+  color: #333752;
+  font-size: 18px;
+  font-weight: bold;
+}
+.order .order_total .buy {
+  padding: 5px 10px;
+  background-color: #333752;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 15px;
+}

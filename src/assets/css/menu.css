@@ -1,0 +1,551 @@
+.menu {
+  height: 100vh;
+  overflow-y: scroll ;
+}
+.menu::-webkit-scrollbar {
+  width: 0 !important;
+}
+.menu .menu_title {
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  box-shadow: 0px 1px 4px 1px #f5f5f5;
+}
+.menu .menu_title .menu_title_address {
+  margin: 15px 10px;
+}
+.menu .menu_title .menu_title_address p {
+  padding: 0;
+  margin: 0;
+}
+.menu .menu_title .menu_title_address p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.menu .menu_title .menu_title_address p:nth-of-type(1) .van-icon {
+  vertical-align: text-bottom;
+  font-weight: bold;
+}
+.menu .menu_title .menu_title_address p:nth-of-type(2) {
+  line-height: 10px;
+  padding: 2px 0px;
+  font-size: 10px;
+  color: #ccc;
+}
+.menu .menu_title .menu_search {
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  position: relative;
+}
+.menu .menu_title .search_box {
+  width: 240px;
+  box-sizing: border-box;
+  margin: 15px 8px 0px 0px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 20px;
+  border: 2px solid #333752;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu .menu_title .search_box input {
+  height: 24px;
+  width: 200px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+  text-indent: 14px;
+}
+.menu .menu_title .search_box span {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  box-sizing: border-box;
+  float: right;
+  vertical-align: middle;
+  background-image: url(../images//search.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.menu .menu_title .search_box .search_list {
+  z-index: -1;
+  position: absolute;
+  top: 19px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #333752;
+  box-sizing: content-box;
+  border-top: 2px solid transparent;
+  right: -2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.menu .menu_title .search_box .search_list ul {
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.menu .menu_title .search_box .search_list ul li {
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  border-bottom: 1px solid #333752;
+  font-weight: bold;
+}
+.menu .menu_title .search_box .search_list ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+.menu .menu_title .active {
+  border-bottom-left-radius: 0px ;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0px ;
+}
+.menu .menu_box {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #f5f5f5;
+  position: fixed;
+  overflow: hidden;
+}
+.menu .menu_box .menu_list {
+  width: 25%;
+  position: fixed;
+}
+.menu .menu_box .menu_list .van-sidebar {
+  width: unset;
+  padding: 0;
+  min-height: 100%;
+  margin: 0;
+}
+.menu .menu_box .menu_list .van-sidebar-item {
+  width: 100%;
+  background-color: f5f5f5;
+  color: #333752;
+  height: 50px;
+  margin: 0px;
+  text-align: center;
+  line-height: 50px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+.menu .menu_box .menu_list .van-sidebar-item--select::before {
+  background-color: #333752;
+}
+.menu .menu_box .menu_goods {
+  width: 75%;
+  box-sizing: border-box;
+  padding: 0px 4px;
+  transform: translateY(0px);
+}
+.menu .menu_box .menu_goods .goods_title {
+  font-size: 14px;
+  color: #333752;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.menu .menu_box .menu_goods .goods_ad {
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.menu .menu_box .menu_goods .goods {
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 0px 4px 1px #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.menu .menu_box .menu_goods .goods_empty {
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 0px 4px 1px #ddd;
+  border-radius: 5px;
+  line-height: 120px;
+  font-weight: bold;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.menu .goods .goods_img {
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.menu .goods .goods_context {
+  width: 160px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100px;
+  text-align: left;
+  font-size: 14px;
+}
+.menu .goods .goods_context .goods_name {
+  font-weight: bold;
+  color: #333752;
+  line-height: 24px;
+}
+.menu .goods .goods_context .goods_info {
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.menu .goods .goods_context .goods_price {
+  margin-top: 10px;
+}
+.menu .goods .goods_context .goods_price .currentPrice {
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu .goods .goods_context .goods_price .cutPrice {
+  font-size: 10px;
+  font-weight: 400;
+  background-color: #ec566b;
+  height: 14px;
+  padding: 0 2px;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 16px;
+  margin: 8px 2px 0px;
+}
+.menu .goods .goods_context .goods_price .add {
+  min-width: 20px;
+  height: 20px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #333752;
+  border-radius: 50%;
+  color: #fff;
+}
+.menu .menu_showbag {
+  width: 340px;
+  height: 50px;
+  left: 50%;
+  margin-left: -170px;
+  background-color: #333752;
+  position: fixed;
+  bottom: 60px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+}
+.menu .menu_showbag .menu_showbag_icon {
+  flex: 2;
+  height: 100%;
+  position: relative;
+}
+.menu .menu_showbag .menu_showbag_icon span.icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 11px auto;
+  background-image: url(../images/shopbag.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.menu .menu_showbag .menu_showbag_icon .showbag_count {
+  display: block;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  background-color: #f9ce0e;
+  position: absolute;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  border-radius: 50%;
+  right: 6px;
+  top: 4px;
+}
+.menu .menu_showbag .menu_showbag_total {
+  flex: 6;
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu .menu_showbag .menu_showbag_total sub {
+  font-size: 14px;
+  font-weight: normal;
+}
+.menu .menu_showbag .menu_showbag_buy {
+  flex: 3;
+  background-color: #f9ce0e;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+.menu .showBag .bag_control {
+  height: 50px;
+  background-color: #f5f5f5;
+  padding: 0px 25px;
+  line-height: 50px;
+  color: #333752;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.menu .showBag .bag_control .allBag {
+  margin: 10px 0px 0px -25px;
+}
+.menu .showBag .bag_order {
+  padding-top: 54px;
+  padding-bottom: 80px;
+}
+.menu .showBag .van-checkbox {
+  margin: 5px 5px 5px 20px;
+  box-sizing: border-box;
+  width: max-content;
+}
+.menu .showBag .cartBox {
+  margin-bottom: 10px;
+}
+.menu .showBag .cartBox .van-checkbox {
+  margin: 35px 5px 0px 20px;
+  box-sizing: border-box;
+  width: max-content;
+}
+.menu .showBag .cart {
+  height: 90px;
+  margin: 2px 36px  4px 10px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px #ccc;
+}
+.menu .showBag .cart .cart_img {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.menu .showBag .cart .cart_context {
+  width: 180px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+.menu .showBag .cart .cart_context .cart_name {
+  font-weight: bold;
+  color: #333752;
+  line-height: 24px;
+}
+.menu .showBag .cart .cart_context .cart_rule {
+  color: #999;
+  font-size: 12px;
+  line-height: 16px;
+}
+.menu .showBag .cart .cart_context .cart_price {
+  margin-top: 5px;
+}
+.menu .showBag .cart .cart_context .cart_price .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu .showBag .cart .cart_context .cart_price .cart_count {
+  color: #999;
+}
+.menu .showBag .cart .cart_context .van-stepper--round .van-stepper__minus {
+  color: #333752;
+  border: 1px solid #333752;
+}
+.menu .showBag .cart .cart_context .van-stepper--round .van-stepper__plus {
+  background-color: #333752;
+  color: #fff;
+}
+.menu .showBag .cartColse {
+  width: 60px;
+  height: 92px;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #f9ce0e;
+  line-height: 92px;
+  text-align: center;
+  font-weight: bold;
+}
+.menu .detail_bgi {
+  position: absolute;
+  top: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px ;
+  z-index: -1;
+  overflow: hidden;
+}
+.menu .detail_bgi .mylove {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  width: 26px;
+  height: 26px;
+}
+.menu .detail {
+  width: 90%;
+  margin: 180px auto 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #ffff;
+  box-shadow: 0px 0px 3px 1px #f5f5f5;
+}
+.menu .detail .detail_img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  margin-top: -40px;
+  left: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 1px #f5f5f5;
+}
+.menu .detail .detail_close {
+  width: 20px;
+  height: 20px;
+  background: url(../images/close.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  margin-top: 5px;
+  right: 30px;
+  border-radius: 50%;
+}
+.menu .detail .detail_info .info_name {
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.menu .detail .detail_info .info_context {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  color: #999;
+  font-size: 12px;
+  text-indent: 2em;
+  border-bottom: 2px dotted #ccc;
+}
+.menu .detail .detail_choice {
+  margin-top: 10px;
+  padding: 0px 30px;
+}
+.menu .detail .detail_choice .choice {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  color: #999;
+  font-size: 12px;
+}
+.menu .detail .detail_choice .detail_opt > span {
+  padding: 5px  14px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  background-color: #333752;
+}
+.menu .detail .detail_choice .detail_opt > span.active {
+  background-color: #f9ce0e;
+}
+.menu .detail .detail_total {
+  box-shadow: 0px -3px 3px 1px #f5f5f5;
+  margin-top: 30px ;
+  padding: 5px 10%;
+}
+.menu .detail .detail_total .total p {
+  margin: 0;
+  padding: 0;
+}
+.menu .detail .detail_total .total p:nth-of-type(1) {
+  color: #333752;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+.menu .detail .detail_total .total p:nth-of-type(2) {
+  color: #999;
+  font-size: 12px;
+  text-align: left;
+}
+.menu .detail .detail_total .count {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.menu .detail .detail_total .count .van-stepper--round .van-stepper__minus {
+  color: #333752;
+  border: 1px solid #333752;
+}
+.menu .detail .detail_total .count .van-stepper--round .van-stepper__plus {
+  background-color: #333752;
+  color: #fff;
+}
+.menu .detail .detail_total .addbag {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  line-height: 40px;
+  background-color: #333752;
+  border-radius: 40px;
+  color: #fff;
+}
+.menu .address_box .address_head {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333752;
+  font-weight: bold;
+}
+.menu .address_box .van-address-list__bottom {
+  bottom: 10px;
+}
+.menu .address_box .van-address-item {
+  margin: 8px 20px;
+  border: 1px solid #f5f5f5;
+}
+.menu .address_box .van-button--danger {
+  background-color: #333752;
+  border: 1px solid #333752;
+}
+.menu .van-popup {
+  height: fit-content;
+  overflow-y: auto;
+}
+.menu .van-popup::-webkit-scrollbar {
+  width: 0 !important;
+}

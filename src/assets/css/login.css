@@ -1,0 +1,168 @@
+.login {
+  overflow: hidden;
+  width: 100%;
+}
+.login .bgi {
+  width: 100%;
+  background-image: url('../images/bgi.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+.login .coming {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.login .login-box {
+  width: 100%;
+  border: 1px solid transparent;
+  background-image: linear-gradient(to top, #333753, #333753, #3337538f, #33357356);
+}
+.login .login-box .login-pic {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 120px auto 0px ;
+  box-shadow: 0px 0px 5px 2px #333753;
+}
+.login .login-box .login-tit {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.login .login-box .loginInp {
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ffffff5e;
+  box-sizing: border-box;
+}
+.login .login-box .loginInp .icon {
+  width: 40px;
+  box-sizing: border-box;
+  display: block;
+  margin: 4px auto;
+  text-align: center;
+}
+.login .login-box .loginInp input {
+  width: 240px;
+  height: 30px;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 5px 0px;
+  font-size: 14px;
+  color: #fff;
+  text-indent: 8px;
+  border-left: 2px solid #333753;
+}
+.login .login-box .loginInp input::-webkit-input-placeholder {
+  color: #ddd;
+  font-size: 14px;
+}
+.login .login-box .last-login-inp {
+  margin-bottom: 0px;
+}
+.login .login-box .last-login-inp svg {
+  margin-top: 6px !important;
+}
+.login .login-box .passForget {
+  width: 280px;
+  margin: 8px  auto;
+  text-decoration: underline;
+  color: #ddd;
+  text-align: right;
+}
+.login .login-box .subBtn {
+  width: 240px;
+  height: 40px;
+  margin: 30px auto 0px ;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.login .login-box .line {
+  width: 300px;
+  height: 2px;
+  margin: 30px auto 0px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.459), #fff, #fff, rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0.2));
+}
+.login .login-box .otherLogin {
+  width: 280px;
+  margin: 30px auto;
+}
+.login .login-box .otherLogin ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.login .login-box .otherLogin ul li {
+  flex: 1;
+}
+.login .login-cover {
+  width: 280px;
+  padding: 1px 24px;
+  color: #333753;
+  box-sizing: border-box;
+  position: relative;
+}
+.login .login-cover .register_title {
+  text-align: left;
+  position: absolute;
+  top: 0px;
+}
+.login .login-cover .register_box {
+  list-style: none;
+  margin: 50px 0px 0px;
+  padding: 0;
+}
+.login .login-cover .register_box .register_item {
+  height: 30px;
+  border: 2px solid #333753;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.login .login-cover .register_box .register_item span {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.login .login-cover .register_box .register_item input {
+  float: right;
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: #333752;
+  text-indent: 8px;
+  border-left: 2px solid #333753;
+}
+.login .login-cover .register_box .zcBtn {
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #333753;
+  color: #fff;
+  margin: 30px auto;
+}

@@ -1,12 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
+
+
 
 <style lang="less">
 #app {
@@ -14,19 +12,40 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  font-size: 14px;
   color: #2c3e50;
+
+}
+body{
+    background-color: #f5f5f5 ;
+    // overflow: scroll;
+
+}
+// 公共样式
+.fl {
+  float: left;
+}
+.fr{
+  float: right;;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
 }
+.clearfix{
+  zoom: 1;
+}
+
+.auto-img{
+  width: 100%;
+  display: block;
+}
+
+
+
 </style>
